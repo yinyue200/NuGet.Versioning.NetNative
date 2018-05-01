@@ -35,11 +35,11 @@ namespace NuGet.Versioning
             }
 
             string formatted = null;
-            var argType = arg.GetType();
+            //var argType = arg.GetType();
 
-            if (argType == typeof(IFormattable))
+            if (false)
             {
-                formatted = ((IFormattable)arg).ToString(format, formatProvider);
+                //formatted = ((IFormattable)arg).ToString(format, formatProvider);
             }
             else if (!string.IsNullOrEmpty(format))
             {
